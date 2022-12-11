@@ -6,20 +6,20 @@ const entries = [
   },
 
   {
-    img: "../imgs/entries/1.jpg",
+    img: "imgs/entries/1.jpg",
     title: "Как писать код быстро и безболезненно?",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
     date: "21.06.2020",
     themes: "создание сайтов",
   },
   {
-    img: "../imgs/entries/2.jpg",
+    img: "imgs/entries/2.jpg",
     title: "Купил новый ноутбук за 150 000 руб",
     date: "21.06.2020",
     themes: "продвижение видео",
   },
   {
-    img: "../imgs/entries/3.jpg",
+    img: "imgs/entries/3.jpg",
     title: "Как я сходил на FrontEnd Conf 2021",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
     date: "21.06.2020",
