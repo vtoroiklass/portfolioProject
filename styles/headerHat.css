@@ -1,0 +1,42 @@
+header {
+  margin-left: 300px;
+}
+
+.header-hat {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.nav-wrapper {
+  display: flex;
+}
+
+.nav-btn {
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  height: 100%;
+  width: 86px;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  background: #3137c9;
+}
+
+.search {
+  height: 40px;
+  margin-left: 30px;
+  background: #202020;
+  border: none;
+  color: #ffffff 40%;
+  width: 212px;
+}

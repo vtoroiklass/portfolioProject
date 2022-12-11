@@ -1,0 +1,50 @@
+.profile {
+  margin: 60px 0 0 50px;
+}
+
+.profile-block {
+  display: flex;
+  align-items: center;
+}
+
+.input-block {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  margin: 60px 0 0 50px;
+  width: 340px;
+}
+
+input {
+  height: 35px;
+  width: 340px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #3f3f3f;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user-profile-avatar {
+  margin-left: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
+}
+
+.user-profile-avatar a {
+  width: 100%;
+  text-align: center;
+  color: #107eff;
+  text-decoration: underline;
+}
+
+.save-btn {
+    margin-top: 25px;
+    width: 90px;
+    height: 30px;
+    background: #3137C9;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+}
