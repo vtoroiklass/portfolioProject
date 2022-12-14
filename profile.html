@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/starting.css" />
     <link rel="stylesheet" href="styles/headerHat.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/message.css">
     <link rel="stylesheet" href="styles/profile.css" />
   </head>
   <body>
@@ -47,7 +48,8 @@
         </div>
         <div class="btns-block">
           <button class="user-works my-btn">
-           <a href="myWorks.html">Мои работы</a></button>
+            <a href="myWorks.html">Мои работы</a>
+          </button>
           <button class="communication my-btn my-btn-blue">Написать мне</button>
         </div>
       </div>
@@ -92,6 +94,22 @@
         </div>
       </main>
     </div>
+
+    <div class="message">
+      <button class="close-message-btn">X</button>
+      <div class="write-and-send">
+        <input
+          type="text"
+          class="write-message"
+          placeholder="Ваше сообщение &#9997;"
+        />
+        <button class="send-message-btn">
+          <img src="imgs/sendMessage.png" alt="" width="20" />
+        </button>
+      </div>
+    </div>
+
+    <script src="scripts/message.js"></script>
     <script src="scripts/sidebar.js"></script>
   </body>
 </html>

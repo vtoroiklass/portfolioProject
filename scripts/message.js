@@ -7,7 +7,7 @@ const sendMessageBtn = document.querySelector(".send-message-btn");
 const messages = [];
 
 function calculateMargin() {
-  return messages.reduce((acc, num) => acc + num, 0);
+  return 20 + messages.reduce((acc, num) => acc + num, 0) + "px";
 }
 
 function pushMessagesArr(message) {
@@ -51,7 +51,7 @@ writeBtn.addEventListener("click", () => {
       secondMessage.innerHTML = "Какой у вас вопрос?";
       messageBlock.appendChild(secondMessage);
 
-      secondMessage.style.top = 20 + calculateMargin() + "px";
+      secondMessage.style.top = calculateMargin();
 
       pushMessagesArr(secondMessage);
 
@@ -65,8 +65,6 @@ writeBtn.addEventListener("click", () => {
   }
 });
 
-writeBtn.click();
-
 sendMessageBtn.addEventListener("click", () => {
   if (a === 1) {
     if (input.value === "") {
@@ -78,13 +76,12 @@ sendMessageBtn.addEventListener("click", () => {
     userMessage.innerHTML = input.value;
     input.value = "";
 
-    userMessage.style.top = 20 + calculateMargin() + "px";
-
-    pushMessagesArr(userMessage);
+    userMessage.style.top = calculateMargin();
 
     a = 2;
 
     messageBlock.appendChild(userMessage);
+    pushMessagesArr(userMessage);
 
     sendMessageBtn.style.background = "#828282";
     sendMessageBtn.style.cursor = "alias";
@@ -97,11 +94,17 @@ sendMessageBtn.addEventListener("click", () => {
       botAnswer.classList.add("bot-message");
       botAnswer.innerHTML =
         "Для более точного ответа свяжитесь со мной через телеграм: @ahahclassicck";
-    //   botAnswer.style.top = 50 + calculateMargin() + "px";
+
+      botAnswer.style.top = calculateMargin();
+
       messageBlock.appendChild(botAnswer);
 
-    //   let sendBotAnswer = setInterval(() => {
-    //   }, 100);
+      clearInterval(sendUserMessage);
+
+      let sendBotAnswer = setInterval(() => {
+        botAnswer.style.left = 10 + "px";
+        clearInterval(sendBotAnswer);
+      }, 800);
     }, 100);
   }
 });
