@@ -1,0 +1,50 @@
+.reg-block {
+    width: 280px;
+    margin: 60px auto 0 auto;
+}
+
+.enter {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.input-block {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    margin-top: 59px;
+}
+
+.input-block-el {
+    height: 35px;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #3f3f3f;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.enter-btn {
+    margin: 33px auto 0 auto;
+    width: 64px;
+    height: 30px;
+    background: #3137C9;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+}
+
+.additional-actions {
+    margin: 20px auto;
+    width: 159px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-btn {
+    font-size: 12px;
+    border: none;
+    background: none;
+}

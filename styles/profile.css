@@ -40,11 +40,11 @@ input {
 }
 
 .save-btn {
-    margin-top: 25px;
-    width: 90px;
-    height: 30px;
-    background: #3137C9;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+  margin-top: 25px;
+  width: 90px;
+  height: 30px;
+  background: #3137C9;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
 }
