@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="styles/profile.css" />
   </head>
   <body>
+    <button class="add-sidebar-btn sidebar-btn">&equiv;</button>
     <div class="sidebar">
+      <button class="close-btn sidebar-btn">x</button>
       <div class="background">
         <img src="imgs/sidebarBackground.png" alt="" height="180" width="300" />
       </div>
@@ -44,47 +46,52 @@
           </p>
         </div>
         <div class="btns-block">
-          <button class="user-works my-btn">Мои работы</button>
+          <button class="user-works my-btn">
+           <a href="myWorks.html">Мои работы</a></button>
           <button class="communication my-btn my-btn-blue">Написать мне</button>
         </div>
       </div>
     </div>
-    <header>
-      <div class="header-hat">
-        <div class="nav">
-          <button class="nav-btn" style="margin-left: 15px">
-            <a href="index.html">Главная </a> </button>
-          <button class="nav-btn">Статьи</button>
-          <button class="nav-btn">Обо мне</button>
-          <button class="nav-btn">Реклама</button>
-        </div>
-        <div class="nav-wrapper">
-          <div class="user-profile">
-            <button class="nav-btn" style="margin-left: 80px">
-              <a href="#">Профиль</a>
+    <div class="wrapper">
+      <header>
+        <div class="header-hat">
+          <div class="nav">
+            <button class="nav-btn" style="margin-left: 15px">
+              <a href="index.html">Главная </a>
             </button>
+            <button class="nav-btn">Статьи</button>
+            <button class="nav-btn">Обо мне</button>
+            <button class="nav-btn">Реклама</button>
           </div>
-          <div class="blog-search">
-            <input type="text" class="search" placeholder="Поиск по блогу" />
+          <div class="nav-wrapper">
+            <div class="user-profile">
+              <button class="nav-btn" style="margin-left: 80px">
+                <a href="#">Профиль</a>
+              </button>
+            </div>
+            <div class="blog-search">
+              <input type="text" class="search" placeholder="Поиск по блогу" />
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <h1 class="profile">Профиль</h1>
-      <div class="profile-block">
-        <div class="input-block">
-          <input type="text" placeholder="Ваше имя и фамилия" />
-          <input type="text" placeholder="Ваша почта" />
-          <input type="text" placeholder="Новый пароль" />
-          <input type="text" placeholder="Подвтердите пароль" />
-          <button class="save-btn">Сохранить</button>
+      </header>
+      <main>
+        <h1 class="profile">Профиль</h1>
+        <div class="profile-block">
+          <div class="input-block">
+            <input type="text" placeholder="Ваше имя и фамилия" />
+            <input type="text" placeholder="Ваша почта" />
+            <input type="text" placeholder="Новый пароль" />
+            <input type="text" placeholder="Подвтердите пароль" />
+            <button class="save-btn">Сохранить</button>
+          </div>
+          <div class="user-profile-avatar">
+            <img src="imgs/profile/avatar.png" alt="" width="150" />
+            <a href="#">Выбрать аватар</a>
+          </div>
         </div>
-        <div class="user-profile-avatar">
-          <img src="imgs/profile/avatar.png" alt="" width="150" />
-          <a href="#">Выбрать аватар</a>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
+    <script src="scripts/sidebar.js"></script>
   </body>
 </html>
