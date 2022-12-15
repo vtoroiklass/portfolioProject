@@ -1,5 +1,5 @@
 main {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 h1 {
@@ -67,22 +67,11 @@ h1 {
   justify-content: center;
 }
 
-.view-work {
+.view-work-btn {
   margin-right: 25px;
   width: 120px;
-  height: 30px;
-  background: #3137c9;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
 }
 
 .view-btn-wrapper {
   width: 100%;
-  display: flex;
-  justify-content: end;
 }

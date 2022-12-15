@@ -51,6 +51,7 @@ for (let i = 0; i < entries.length; i++) {
   if (entries[i].text) {
     const entryText = document.createElement("span");
     entryText.innerHTML = entries[i].text;
+    entryText.classList.add("post-text");
     entryText.classList.add("entry-text");
 
     entry.appendChild(entryText);
@@ -64,6 +65,7 @@ for (let i = 0; i < entries.length; i++) {
     if (entries[i].themes) {
 
         const dateWrapper = document.createElement('div')
+        dateWrapper.classList.add('additional-inf')
         dateWrapper.classList.add('date-wrapper')
         entry.appendChild(dateWrapper)
         dateWrapper.appendChild(entryDate)

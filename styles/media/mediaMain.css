@@ -1,0 +1,20 @@
+@media (max-width: 500px) {
+    .header-story-blog {
+        width: 293px;
+        display: none;
+    }
+
+    .create-entry {
+        display: none;
+    }
+
+    .entry-wrapper {
+        width: 290px;
+    }
+
+    .entry-img {
+        width: 290px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}

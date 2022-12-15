@@ -37,30 +37,11 @@
 }
 
 .article-title {
-  font-size: 18px;
-  font-weight: 500;
+  margin-left: 0;
 }
 
-
-
-.article-info {
-  display: flex;
-  column-gap: 15px;
-  margin: 9px 0 34px 0;
-}
-
-.publication-date, .article-info {
-    font-size: 12px;
-    color: #828282;
-}
-
-.separator {
-  color: #c4c4c4;
-}
-
-.article-first-text {
-  font-size: 14px;
-  line-height: 21px;
+.article-text {
+  color: #fff;
 }
 
 .article-img {
@@ -75,82 +56,77 @@
 }
 
 .interesting-articles {
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .interesting {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 19px;
-    row-gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 19px;
+  row-gap: 24px;
 }
 
 .interesting-article-title a {
-    color: #F3EBA2;
-    font-size: 14px;
-    font-weight: 500;
+  color: #F3EBA2;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .comments-block {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .comments-block-title {
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .comment-input {
-    margin: 19px 0 12px 0;
-    width: 100%;
-    font-size: 16px;
-    border: none;
-    background: none;
-    border-bottom: 1px solid #3F3F3F;
+  margin: 19px 0 12px 0;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #3F3F3F;
 }
 
 .send-comment-btn {
-    background: #3137C9;
-    border: none;
-    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
-    font-size: 12px;
-    border-radius: 5px;
-    width: 91px;
-    height: 30px;
+  margin: 0;
+  width: 91px;
 }
 
 .comment {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 16px;
-    align-items: center;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  align-items: center;
 }
 
 .comment-user-info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 89px;
-    font-size: 12px;
-    font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  width: 89px;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .comment-text {
-    margin-top: 15px;
-    font-size: 12px;
-    line-height: 14px;
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .reply-btn {
-    margin-top: 5px;
-    background: none;
-    border: none;
-    color: #107EFF;
-    font-size: 12px;
+  margin-top: 5px;
+  background: none;
+  border: none;
+  color: #107EFF;
+  font-size: 12px;
 }
 
 .reply-comment {
-    margin: 29px 0 0 30px;
+  margin: 29px 0 0 30px;
 }

@@ -1,4 +1,4 @@
-.profile {
+.profile-hat {
   margin: 60px 0 0 50px;
 }
 
@@ -40,11 +40,6 @@ input {
 }
 
 .save-btn {
-  margin-top: 25px;
+  margin: 25px 0;
   width: 90px;
-  height: 30px;
-  background: #3137C9;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
 }

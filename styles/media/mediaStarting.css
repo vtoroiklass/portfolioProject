@@ -1,0 +1,6 @@
+@media (max-width: 500px) {
+    .media-wrapper {
+        margin-left: 0;
+        transition: all .3s;
+    }
+}

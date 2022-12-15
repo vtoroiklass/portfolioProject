@@ -5,8 +5,6 @@
 
 .enter {
     text-align: center;
-    font-size: 21px;
-    font-weight: 400;
 }
 
 .input-block {
@@ -24,16 +22,6 @@
     border-bottom: 2px solid #3f3f3f;
     font-size: 14px;
     font-weight: 400;
-}
-
-.enter-btn {
-    margin: 33px auto 0 auto;
-    width: 64px;
-    height: 30px;
-    background: #3137C9;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
 }
 
 .additional-actions {

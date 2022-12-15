@@ -1,0 +1,10 @@
+@media (max-width: 500px) {
+
+    .header-hat {
+        max-width: 100vw;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}

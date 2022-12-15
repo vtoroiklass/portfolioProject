@@ -1,39 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: sans-serif;
-  color: #fff;
-  background: #181818;
-  overflow-x: hidden;
-}
-
 .sidebar-btn {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  font-size: 25px;
   background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #202020;
-  color: aliceblue;
-  border-radius: 10px;
-  font-weight: 700;
+  border: none;
   top: 50px;
   left: 10px;
-}
-
-button {
-  color: #fff;
-  cursor: pointer;
+  z-index: 1;
+  background: #20202063;
+  padding: 10px;
 }
 
 .sidebar {
-  left: -45%;
+  left: -100%;
   position: fixed;
   width: 300px;
   height: 100%;
@@ -83,8 +60,7 @@ button {
 .btns-block {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 60px auto 0 auto;
   width: 260px;
 }
 
@@ -103,4 +79,8 @@ button {
 
 .my-btn-blue {
   background: #3137C9;
+}
+
+.sections {
+  display: none;
 }

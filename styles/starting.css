@@ -11,14 +11,44 @@ body {
 }
 
 .wrapper {
-  /* margin-left: 300px; */
   transition: all .3s;
 }
+
+.page-hat {
+  font-size: 21px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 60px;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* btns */
 
 button {
   color: #fff;
   cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
+
+.portfolio-btn {
+  margin: 33px auto 0 auto;
+  width: 64px;
+  height: 30px;
+  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+  background: #3137c9;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+}
+
+/* links */
 
 a {
   text-decoration: none;
@@ -27,4 +57,38 @@ a {
 
 a:visited {
   color: #fff;
+}
+
+/* information about post */
+
+.additional-inf {
+  display: flex;
+  column-gap: 15px;
+  margin: 9px 0 34px 0;
+  font-size: 12px;
+  color: #828282;
+}
+
+.date-separator {
+  color: #C4C4C4;
+}
+
+.separator {
+  margin: 0 auto;
+  width: 85%;
+  height: 1px;
+  background: #1C1C1C;
+}
+
+.entry-title {
+  margin: 25px 0 0 25px;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.post-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #d2d2d2;
 }

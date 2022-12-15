@@ -72,35 +72,17 @@
   height: auto;
 }
 
-.entry-title {
-  margin: 25px 0 0 25px;
-  display: block;
-  font-size: 18px;
-  font-weight: 500;
-}
-
 .entry-text {
   display: inline-block;
-  font-size: 14px;
-  font-weight: 400;
-  color: #d2d2d2;
   margin: 15px 26px 0 26px;
 }
 
 .date-wrapper {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-    height: 45px;
+  height: 45px;
 }
 
-.date-separator {
-    height: 19px;
-    color: #C4C4C4;
-    font-size: 15px;
-}
-
-.entry-date, .entry-themes {
+.entry-date,
+.entry-themes {
   display: inline-block;
   font-weight: 400;
   font-size: 12px;
@@ -109,24 +91,24 @@
 }
 
 .entry-date {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .page-nav {
-    width: 240px;
-    display: flex;
-    justify-content: space-between;
-    margin: 80px auto;
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto;
 }
 
 .page-nav-btn {
-    width: 40px;
-    height: 40px;
-    background: #0D0D0D;
-    border: none;
-    transition: all .2s;
+  width: 40px;
+  height: 40px;
+  background: #0D0D0D;
+  border: none;
+  transition: all .2s;
 }
 
 .page-nav-btn:hover {
-    background: #104BE3;
+  background: #104BE3;
 }
