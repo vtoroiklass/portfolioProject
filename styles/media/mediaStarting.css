@@ -1,6 +1,18 @@
 @media (max-width: 500px) {
-    .media-wrapper {
-        margin-left: 0;
-        transition: all .3s;
-    }
+  .wrapper {
+    overflow-x: hidden;
+  }
+
+  .media-wrapper {
+    position: relative;
+    margin-left: 0;
+    transition: all 0.3s;
+  }
+
+  .portfolio-btn {
+    padding: 10px;
+    width: auto;
+    height: auto;
+    font-size: 21px;
+  }
 }

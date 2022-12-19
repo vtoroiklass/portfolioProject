@@ -1,12 +1,12 @@
 .sidebar-btn {
-  position: absolute;
+  position: fixed;
   background: none;
   border: none;
   top: 50px;
   left: 10px;
-  z-index: 1;
   background: #20202063;
   padding: 10px;
+  z-index: 2;
 }
 
 .sidebar {

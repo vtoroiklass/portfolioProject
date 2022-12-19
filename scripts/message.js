@@ -27,7 +27,12 @@ function createMessage(messageName, innerHTML, ...classes) {
 let a = 0;
 
 writeBtn.addEventListener("click", () => {
-  messageBlock.style.bottom = 0;
+  messageBlock.style.display = "block";
+
+  let showMessageBlock = setInterval(() => {
+    messageBlock.style.bottom = 0;
+    clearInterval(showMessageBlock);
+  }, 1);
 
   if (a === 0) {
     a = 1;
@@ -111,4 +116,8 @@ sendMessageBtn.addEventListener("click", () => {
 
 closeMessageBlock.addEventListener("click", () => {
   messageBlock.style.bottom = -50 + "%";
+  let hideMessageBlock = setInterval(() => {
+    messageBlock.style.display = "none";
+    clearInterval(hideMessageBlock)
+  }, 250);
 });

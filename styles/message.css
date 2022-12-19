@@ -8,7 +8,7 @@ button {
 
 .message {
   width: 250px;
-  height: 310px;
+  height: 350px;
   overflow-x: hidden;
   background: #161616;
   position: fixed;
@@ -17,6 +17,7 @@ button {
   border-radius: 10px;
   transition: all ease-in-out 0.3s;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.532);
+  display: none;
 }
 
 .close-message-btn {

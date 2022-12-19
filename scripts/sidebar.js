@@ -10,9 +10,9 @@ addSidebarBtn.addEventListener('click', () => {
         sidebar.style.left = 0 + '%'
 
         if (body.clientWidth > 500) {
-            wrapper.style.marginLeft = 300 + 'px'
+            wrapper.style.left = 300 + 'px'
         } else {
-            mediaWrapper.style.marginLeft = 350 + 'px'
+            mediaWrapper.style.left = 350 + 'px'
         }
 
         b = 1
@@ -24,9 +24,9 @@ addSidebarBtn.addEventListener('click', () => {
         sidebar.style.left = -100 + '%';
 
         if (body.clientWidth > 500) {
-            wrapper.style.marginLeft = 0
+            wrapper.style.left = 0
         } else {
-            mediaWrapper.style.marginLeft = 0
+            mediaWrapper.style.left = 0
         }
 
         b = 0

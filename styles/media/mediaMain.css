@@ -1,20 +1,25 @@
 @media (max-width: 500px) {
-    .header-story-blog {
-        width: 293px;
-        display: none;
-    }
+  .header-story-blog {
+    margin-top: 25px;
+    overflow: hidden;
+  }
 
-    .create-entry {
-        display: none;
-    }
+  .create-entry {
+    display: none;
+  }
 
-    .entry-wrapper {
-        width: 290px;
-    }
+  .entry-wrapper {
+    position: relative;
+  }
 
-    .entry-img {
-        width: 290px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
+  .header-story-blog,
+  .entry-wrapper {
+    width: 85%;
+  }
+
+  .entry-img {
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
