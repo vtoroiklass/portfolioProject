@@ -35,7 +35,6 @@ h1 {
 .work-info {
   display: flex;
   flex-wrap: wrap;
-  height: 380px;
 }
 
 .work-title {
