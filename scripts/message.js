@@ -114,10 +114,14 @@ sendMessageBtn.addEventListener("click", () => {
   }
 });
 
-closeMessageBlock.addEventListener("click", () => {
+function closeMessageBlockFn() {
   messageBlock.style.bottom = -50 + "%";
   let hideMessageBlock = setInterval(() => {
     messageBlock.style.display = "none";
-    clearInterval(hideMessageBlock)
+    clearInterval(hideMessageBlock);
   }, 250);
+}
+
+closeMessageBlock.addEventListener("click", () => {
+  closeMessageBlockFn();
 });
