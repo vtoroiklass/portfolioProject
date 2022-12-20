@@ -26,18 +26,6 @@ addSidebarBtn.addEventListener("click", () => {
   }
 });
 
-document.addEventListener("click", (e) => {
-  const sidebarStyles = window.getComputedStyle(sidebar);
-  if (parseInt(sidebarStyles.getPropertyValue("left")) < 0) return;
-  
-  const withinBoundariesSidebar = e.composedPath().includes(sidebar);
-  const withinBoundariesMessage = e.composedPath().includes(messageBlock);
-  
-  if (!withinBoundariesSidebar && !withinBoundariesMessage) {
-    closeSidebar();
-  }
-});
-
 function openSidebar() {
   sidebar.style.left = 0 + "%";
 
@@ -60,3 +48,31 @@ function closeSidebar() {
 
 // touchscreen
 
+let touchstartX = 0;
+let touchendX = 0;
+let touchstartY = 0;
+let touchendY = 0;
+
+function checkDirection() {
+  // left
+  if (touchendX + 20 < touchstartX) closeSidebar();
+
+  // right
+  if (
+    touchendX > touchstartX + 10 &&
+    touchstartY - touchendY <= 30 &&
+    touchendY - touchstartY <= 30
+  )
+    openSidebar();
+}
+
+document.addEventListener("touchstart", (e) => {
+  touchstartX = e.changedTouches[0].screenX;
+  touchstartY = e.changedTouches[0].screenY;
+});
+
+document.addEventListener("touchend", (e) => {
+  touchendX = e.changedTouches[0].screenX;
+  touchendY = e.changedTouches[0].screenY;
+  checkDirection();
+});
