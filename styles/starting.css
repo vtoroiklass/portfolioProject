@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .page-hat {
@@ -23,6 +23,17 @@ body {
 
 li {
   list-style-type: none;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(300deg, #797f88, #4f5359);
 }
 
 /* btns */
@@ -39,14 +50,77 @@ button {
 
 .portfolio-btn {
   margin: 33px auto 0 auto;
-  width: 64px;
-  height: 30px;
-  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+  min-width: 100px;
+  min-height: 30px;
   background: #3137c9;
   border-radius: 5px;
   font-size: 12px;
-  box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
+  padding: 5px 10px;
+  font-size: 17px;
+  box-shadow: 0 4px #141782;
+  transition: all 0.2s;
 }
+
+.portfolio-btn:active {
+  box-shadow: 0 2px #0a0d58;
+  transform: translateY(4px);
+}
+
+.portfolio-btn span {
+  transition: all 0.5s;
+}
+
+.portfolio-btn span {
+  position: relative;
+}
+
+.portfolio-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.portfolio-btn:hover span {
+  padding-right: 15px;
+}
+
+.portfolio-btn:hover span:after {
+  opacity: 1;
+  right: -2px;
+}
+
+/* .portfolio-btn, .portfolio-btn span, .portfolio-btn span:after {
+  transition: all .3s;
+}
+
+.portfolio-btn span {
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-btn span::after {
+  font-size: 28px;
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -40%;
+  padding: 0;
+  right: -20px;
+}
+
+.portfolio-btn:hover span{
+  padding-right: 25px;
+}
+
+.portfolio-btn:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+.portfolio-btn */
 
 /* links */
 
@@ -70,14 +144,14 @@ a:visited {
 }
 
 .date-separator {
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 
 .separator {
   margin: 0 auto;
   width: 85%;
   height: 1px;
-  background: #1C1C1C;
+  background: #1c1c1c;
 }
 
 .entry-title {

@@ -1,5 +1,5 @@
 .sidebar-btn {
-  position: fixed;
+  position: absolute;
   background: none;
   border: none;
   top: 50px;

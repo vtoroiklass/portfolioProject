@@ -1,11 +1,12 @@
-.header-story-blog {
+.story-block {
   display: flex;
   width: 600px;
   column-gap: 13px;
   margin: 0 auto;
+  overflow: auto;
 }
 
-.story-block {
+.story-block-el {
   position: relative;
   margin-top: 60px;
   font-weight: 400;
@@ -14,7 +15,7 @@
   cursor: pointer;
 }
 
-.story-block img {
+.story-block-el img {
   border-radius: 10px;
 }
 
@@ -104,11 +105,53 @@
 .page-nav-btn {
   width: 40px;
   height: 40px;
-  background: #0D0D0D;
+  background: #0d0d0d;
   border: none;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .page-nav-btn:hover {
-  background: #104BE3;
+  background: #104be3;
+}
+
+.story-block-el-active {
+  position: absolute;
+  height: 101vh;
+  width: 100vw;
+  margin: 0;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #121212d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-block-el-active .img-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.story-block-el-active .img-wrapper,
+.story-block-el-active .img-wrapper img {
+  height: 100%;
+}
+
+.story-block-el-active .duration-wrapper {
+  display: block;
+  position: absolute;
+  width: 90%;
+  top: 10px;
+  height: 5px;
+  background: #acacac;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.story-block-el-active .duration {
+  display: block;
+  height: 5px;
+  background: #7e7e7e;
 }

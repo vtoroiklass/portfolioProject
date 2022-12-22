@@ -1,3 +1,15 @@
+.reg-link-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.reg-link {
+  background: blue;
+  padding: 6px;
+  border-radius: 8px;
+  opacity: 0.5;
+}
+
 .profile-hat {
   margin: 60px 0 0 50px;
 }

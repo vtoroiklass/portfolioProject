@@ -1,11 +1,10 @@
 @media (max-width: 500px) {
-  .header-story-blog {
+  .story-block {
     margin-top: 60px;
-    width: 100%;
-    overflow: auto;
     border-radius: 10px;
   }
-  .header-story-blog::-webkit-scrollbar {
+
+  .story-block::-webkit-scrollbar {
     width: 0;
     height: 0;
   }
@@ -22,7 +21,7 @@
     position: relative;
   }
 
-  .header-story-blog,
+  .story-block,
   .entry-wrapper {
     width: 85%;
   }

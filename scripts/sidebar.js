@@ -53,7 +53,11 @@ let touchendX = 0;
 let touchstartY = 0;
 let touchendY = 0;
 
-function checkDirection() {
+function checkDirection(e) {
+  if (e.composedPath().includes(document.querySelector(".story-block"))) {
+    return;
+  }
+
   // left
   if (touchendX + 20 < touchstartX) closeSidebar();
 
@@ -74,5 +78,5 @@ document.addEventListener("touchstart", (e) => {
 document.addEventListener("touchend", (e) => {
   touchendX = e.changedTouches[0].screenX;
   touchendY = e.changedTouches[0].screenY;
-  checkDirection();
+  checkDirection(e);
 });

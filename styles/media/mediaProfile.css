@@ -1,5 +1,10 @@
 @media (max-width: 500px) {
+  main {
+    margin-top: 50px;
+  }
+
   .profile-hat {
+    margin-top: 20px;
     font-size: 24px;
   }
 
@@ -13,8 +18,8 @@
     width: 100%;
   }
 
-  .user-profile-avatar, .input-block {
+  .user-profile-avatar,
+  .input-block {
     margin: 30px 0;
   }
 }
-
