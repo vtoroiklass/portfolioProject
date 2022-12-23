@@ -25,6 +25,36 @@ li {
   list-style-type: none;
 }
 
+.input-block {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+
+input {
+  outline: none;
+  color: #fff;
+}
+
+.portfolio-input {
+  height: 35px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #3f3f3f;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all .3s;
+}
+
+.portfolio-input:focus {
+  border-bottom: 2px solid #107EFF;
+}
+
+.portfolio-input::placeholder {
+  padding-left: 0;
+}
+
+
 /* scrollbar */
 
 ::-webkit-scrollbar {
@@ -91,36 +121,6 @@ button {
   opacity: 1;
   right: -2px;
 }
-
-/* .portfolio-btn, .portfolio-btn span, .portfolio-btn span:after {
-  transition: all .3s;
-}
-
-.portfolio-btn span {
-  display: inline-block;
-  position: relative;
-}
-
-.portfolio-btn span::after {
-  font-size: 28px;
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: -40%;
-  padding: 0;
-  right: -20px;
-}
-
-.portfolio-btn:hover span{
-  padding-right: 25px;
-}
-
-.portfolio-btn:hover span::after {
-  opacity: 1;
-  right: 0;
-}
-
-.portfolio-btn */
 
 /* links */
 

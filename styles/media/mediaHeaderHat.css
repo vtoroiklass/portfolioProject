@@ -1,12 +1,16 @@
 @media (max-width: 500px) {
 
     .header-hat {
-        max-width: 100vw;
+        width: 100vw;
         position: fixed;
         z-index: 1;
     }
 
     .nav-btn {
         display: none;
+    }
+
+    .sidebar-btn {
+        position: fixed;
     }
 }

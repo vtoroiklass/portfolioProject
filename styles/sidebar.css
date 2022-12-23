@@ -1,14 +1,3 @@
-.sidebar-btn {
-  position: absolute;
-  background: none;
-  border: none;
-  top: 50px;
-  left: 10px;
-  background: #20202063;
-  padding: 10px;
-  z-index: 2;
-}
-
 .sidebar {
   left: -100%;
   position: fixed;
@@ -76,10 +65,24 @@
   font-size: 12px;
   line-height: 14px;
   font-weight: 500;
+  transition: all .3s;
+}
+
+.my-btn:hover {
+  background: #ad2319;
+  box-shadow: 5px 6px 15px #111111;
+}
+
+.my-btn:active {
+  transform: translateY(4px);
 }
 
 .my-btn-blue {
   background: #3137C9;
+}
+
+.my-btn-blue:hover {
+  background: #272ba5;
 }
 
 .sections {
